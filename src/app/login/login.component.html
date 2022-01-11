@@ -1,0 +1,27 @@
+<main id="main">
+    <div class="wrapper-form">
+        <div class="container">
+            <div class="boxes">
+                <img class="logo img-fluid" src="http://118.69.37.109:8001/assets/images/logo.png" alt="The New Gym" />
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class=" floating-label-wrap ">
+                        <input type="text" class="floating-label-field" name="username" placeholder="Username" formControlName="username" autofocus />
+                        <label for="field-username" class="floating-label">Username</label>
+                    </div>
+                    <div class="floating-label-wrap ">
+                        <input type="password" class="floating-label-field" name="password" autocomplete="off" placeholder="Password" formControlName="password" />
+                        <label for="field-password" class="floating-label">Password</label>
+                    </div>
+                    <div class="sub-cta ">
+                        <a [routerLink]=" '../forgot-password' " class="forgot-pwd ">Forgot Password</a
+              >
+              <div class="clearfix "></div>
+            </div>
+            <div class="cta-bt ">
+              <button class="cta-blue " id="accept ">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>

@@ -1,0 +1,369 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5 !important;
+    background: #fff;
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.wrapper-form {
+    background: url("http://118.69.37.109:8001/bg-login.jpg") center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-form .boxes {
+    border-radius: 30px;
+    box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 45px 50px 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 641px) {
+    .wrapper-form .boxes {
+        padding: 25px 25px 10px;
+    }
+}
+
+.wrapper-form .boxes .language {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    display: flex;
+    align-items: baseline;
+}
+
+.wrapper-form .boxes .language__line {
+    width: 2px;
+    height: 10px;
+    background-color: #555859;
+    margin: 0 7px;
+}
+
+.wrapper-form .boxes .language span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555859;
+    cursor: pointer;
+}
+
+.wrapper-form .boxes .language .active {
+    color: #05a9d7;
+}
+
+.wrapper-form .boxes form {
+    padding: 20px 0;
+}
+
+.wrapper-form .boxes .login-social {
+    margin-bottom: 20px;
+}
+
+.wrapper-form .boxes .login-social p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #555859;
+    margin-bottom: 10px;
+}
+
+.wrapper-form .boxes .login-social p span {
+    font-weight: 700;
+    display: block;
+}
+
+.wrapper-form .boxes .login-social__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-form .boxes .login-social__icon a {
+    display: block;
+    margin: 0 8px;
+}
+
+.wrapper-form .boxes .login-social__icon a img {
+    width: 35px;
+}
+
+.wrapper-form .boxes .logo {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.wrapper-form .boxes .title-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555859;
+    margin-bottom: 5px;
+}
+
+.wrapper-form .boxes .sub-text {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #555859;
+}
+
+.wrapper-form .boxes .floating-label-wrap {
+    margin-bottom: 40px;
+    display: flex;
+    flex-flow: column-reverse;
+    position: relative;
+}
+
+.wrapper-form .boxes .floating-label-wrap .floating-label-field+.floating-label {
+    transition: transform 0.25s, opacity 0.25s ease-in-out;
+    transform-origin: 0 0;
+}
+
+.wrapper-form .boxes .floating-label-wrap .floating-label-field:focus+.floating-label,
+.wrapper-form .boxes .floating-label-wrap .floating-label-field:not(:placeholder-shown)+.floating-label {
+    transform: translate(1%, -30%) scale(0.8);
+}
+
+.wrapper-form .boxes .floating-label-wrap label {
+    opacity: 0.6;
+    line-height: 1;
+    color: #777777;
+    position: absolute;
+    left: 8px;
+    font-size: 14px;
+    top: 5px;
+}
+
+.wrapper-form .boxes .floating-label-wrap .floating-label-field+.floating-label {
+    transition: transform 0.25s, opacity 0.25s ease-in-out;
+    transform-origin: 0 0;
+}
+
+.wrapper-form .boxes .floating-label-wrap .floating-label-field:focus+.floating-label,
+.wrapper-form .boxes .floating-label-wrap .floating-label-field:not(:placeholder-shown)+.floating-label {
+    transform: translate(0, -170%) scale(0.8);
+    opacity: 1;
+    margin-bottom: 8px;
+}
+
+.wrapper-form .boxes .floating-label-wrap input[type="text"],
+.wrapper-form .boxes .floating-label-wrap input[type="password"],
+.wrapper-form .boxes .floating-label-wrap input[type="email"] {
+    padding: 5px 8px 3px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    font-weight: 600;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.wrapper-form .boxes .floating-label-wrap input[type="text"]::placeholder,
+.wrapper-form .boxes .floating-label-wrap input[type="password"]::placeholder,
+.wrapper-form .boxes .floating-label-wrap input[type="email"]::placeholder {
+    opacity: 0;
+}
+
+.wrapper-form .boxes .floating-label-wrap input[type="text"]:hover,
+.wrapper-form .boxes .floating-label-wrap input[type="text"]:focus,
+.wrapper-form .boxes .floating-label-wrap input[type="text"]:active,
+.wrapper-form .boxes .floating-label-wrap input[type="password"]:hover,
+.wrapper-form .boxes .floating-label-wrap input[type="password"]:focus,
+.wrapper-form .boxes .floating-label-wrap input[type="password"]:active,
+.wrapper-form .boxes .floating-label-wrap input[type="email"]:hover,
+.wrapper-form .boxes .floating-label-wrap input[type="email"]:focus,
+.wrapper-form .boxes .floating-label-wrap input[type="email"]:active {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #05a9d7;
+}
+
+.wrapper-form .boxes .floating-label-wrap input[type="text"]:hover+label,
+.wrapper-form .boxes .floating-label-wrap input[type="text"]:focus+label,
+.wrapper-form .boxes .floating-label-wrap input[type="text"]:active+label,
+.wrapper-form .boxes .floating-label-wrap input[type="password"]:hover+label,
+.wrapper-form .boxes .floating-label-wrap input[type="password"]:focus+label,
+.wrapper-form .boxes .floating-label-wrap input[type="password"]:active+label,
+.wrapper-form .boxes .floating-label-wrap input[type="email"]:hover+label,
+.wrapper-form .boxes .floating-label-wrap input[type="email"]:focus+label,
+.wrapper-form .boxes .floating-label-wrap input[type="email"]:active+label {
+    color: #2d8cf0;
+}
+
+.wrapper-form .boxes .remember-me {
+    float: left;
+    font-size: 12px;
+}
+
+.wrapper-form .boxes .remember-me label {
+    cursor: pointer;
+}
+
+.wrapper-form .boxes .remember-me label:before {
+    top: 0;
+}
+
+.wrapper-form .boxes .remember-me label:after {
+    top: 0;
+}
+
+.wrapper-form .boxes .forgot-pwd {
+    float: right;
+    font-size: 12px;
+}
+
+.wrapper-form .boxes .forgot-pwd:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.wrapper-form .boxes .cta-bt {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+    .wrapper-form .boxes .cta-bt {
+        justify-content: space-around;
+    }
+}
+
+.wrapper-form .boxes .term {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.wrapper-form .boxes .term a {
+    color: #438afe;
+}
+
+.wrapper-form .boxes .term a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-form--reset-pass .boxes .logo {
+    margin: 0 auto 80px;
+}
+
+.wrapper-form--reset-pass .boxes .sub-text {
+    text-align: left;
+}
+
+.wrapper-form--reset-pass .boxes form {
+    padding: 10px 0 60px;
+    text-align: right;
+}
+
+.wrapper-form--reset-pass .boxes form .accept-term {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+.wrapper-form--reset-pass .boxes form .accept-term label {
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.wrapper-form--reset-pass .boxes form .accept-term label a {
+    color: #05a9d7;
+}
+
+.wrapper-form--reset-pass .boxes form .accept-term label a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-form--reset-pass .boxes form .accept-term label:before,
+.wrapper-form--reset-pass .boxes form .accept-term label:after {
+    top: 0;
+}
+
+.wrapper-form--reset-pass .boxes form .floating-label-wrap {
+    margin-bottom: 25px;
+}
+
+.wrapper-form--reset-pass .boxes form .floating-label-wrap label img {
+    width: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+}
+
+.wrapper-form .boxes .cta-bt {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+    .wrapper-form .boxes .cta-bt {
+        justify-content: space-around;
+    }
+}
+
+.cta-blue {
+    background: #05a9d7;
+    color: #fff;
+    border: 2px solid #05a9d7;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    width: 160px;
+}
+
+@media (max-width: 425px) {
+    .cta-blue {
+        width: 135px;
+    }
+}
+
+.cta-blue:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.wrapper-form .boxes .forgot-pwd {
+    float: right;
+    font-size: 12px;
+}
+
+.wrapper-form .boxes .forgot-pwd:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
